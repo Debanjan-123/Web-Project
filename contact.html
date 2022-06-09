@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> HOTEL BT|CONTACT </title>
+</head>
+<body>
+	<header>
+			<style>
+			*{
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+			}
+			body{
+				font-family: sans-serif;
+				line-height:1.7em;
+			}
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+			h1,h2,h3{
+				padding-bottom:20px;
+			}
+			p{
+				margin:10px 0;
+			}
+			.container{
+				margin: auto;
+				max-width: 1100px;
+				overflow: auto;
+				padding:0 20px;
+			}
+				.container h1{
+				text-shadow: 1px 1px;
+			}
+			.container a{
+				text-shadow: 1px 1px ;
+			}
+			#navbar{
+				background-color: #333;
+				overflow: auto;
+				color:#fff;
+			}
+			#navbar a{
+				color:#fff;
+			}
+			#navbar h1{
+				float:left;
+				padding-top:20px;
+			}
+			#navbar ul{
+				list-style: none;
+				float:right;
+			}
+			#navbar ul li{
+				float:left;
+			}
+			#navbar ul li a{
+				display:block;
+				padding:20px;
+				text-align:center;
+			}
+			#navbar ul li a:hover, #navbar ul li a.bar{
+				background-color: #444;
+				color:#f7c08a;
+			}
+			.text-primary{
+				color:red;
+			}
+			#showcase{
+				background:url("2.jpg") no-repeat center center/cover;
+				height: 600px;
+			}
+			#shoecase ,.showcase-content{
+				color:blue;
+				text-align:center;
+				padding-top: 170px;
+			}
+			 .showcase-content h1{
+				font-size:60px;
+				line-height:1.2em;
+			}
+			.showcase-content p{
+				font-size: 18px;
+			}
+			.btn{
+				display:inline-block;
+				font-size:18px;
+				color:blue;
+				background:black;
+				padding:13px 20px;
+				cursor:pointer;
+				border:none;
+			}
+			.btn:hover{
+				background:#f7c08a;
+				color:#333;
+			}
+			#home-info{
+				height:500px;
+			}
+			 .info-image{
+				float:left;
+				width:50%;
+				background:url("6.jpg") no-repeat;
+				max-height: 100%;
+				height:500px;
+			}
+			#home-info .info-content{
+				float:right;
+				width:50%;
+				max-height:100%;
+				text-align:center;
+				padding:5px 5px;
+				overflow:hidden;
+				height:500px;
+			}
+			#about-info .info-right{
+				float:right;
+				width:50%;
+				min-height:100%;
+			}
+			#about-info .info-right img{
+				display:block;
+				width:100%;
+				margin:auto;
+				border-radius:55%;
+			}
+			#about-info .info-left{
+				float:left;
+				width:50%;
+				min-height:100%;
+			}
+			.l-heading{
+				font-size: 40px;
+			}
+			#about-info{
+				padding:20px 20px;
+			}
+			#testimonials{
+				height:600px;
+				background:url("3.jpg")no-repeat center center/cover;
+				bottom-padding:20px;
+			}
+			#testimonials h2{
+				color:blue;
+				text-align:center;
+				padding-top:20px;
+			}
+			#testimonials .testimonial img{
+				width:100px;
+				display:inline-block;
+				background:black;
+				border:5px solid red;
+			}
+			#testimonials .testimonial p{
+				color:blue;
+				font-size:25px;
+				top-padding:10px;
+				display:inline-block;
+				background:white;
+			}
+			#contact-form label{
+				display:block;
+				margin-bottom:5px;
+			}
+			#contact-form .form-group{
+				margin-bottom:20px;
+				color:black;
+			}
+			#contact-form input,
+			#contact-form textarea{
+				width:40%;
+				padding:10px;
+				border:1px #ddd solid;
+			}
+			#contact-form textarea{
+				height:200px;
+			}
+			.container, .l-heading, .text-primary{
+				text-shadow: 1px 1px 10px;
+			}
+			#contact-form{
+				background:url("3.jpg");
+				animation-name:animate2;
+				animation-duration:5s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes animate2{
+				to{
+					background:url("6.jpg");
+				}
+			}
+			.btn{
+				box-shadow: 5px 5px 20px;
+			}
+			#contact-form p{
+				color:black;
+			}
+			.form-type label{
+				color:black;
+			}
+				#main-footer{
+				text-align:center;
+				background-color:pink;
+				padding: 10px 10px; 
+				border:4px solid black;
+			}
+		</style>
+	<header>
+		<nav id="navbar">
+		<div class="container">
+			<h1 class="logo"><a href="index.html"> HOTEL DEB-BHOOMI </a></h1> 
+			<ul>
+			<li> <a class="bar" href="index.html"> HOME </a></li>
+			<li> <a href="about.html"> ABOUT </a></li>
+			<li> <a href="contact.html"> CONTACT </a></li>
+			</ul>
+		</div> 
+		</nav>
+	</header>
+		<section id="contact-form">
+			<div class="container">
+				<h1 class="l-haeding"><span class="text-primary">Contact</span> Us </h1>
+				<p><strong> Fill out the form below to contact us </strong></p>
+				<script type="text/javascript">
+			function validate1()
+			{
+				var name = document.getElementsById("uname");
+				var email = document.getElementsById("mail");
+				var message = document.getElementById("imessage"); 
+				if(name.value ==" " || email.value ==" " || message.value ==" ")
+				{
+					alert("No blank values are allowed");
+				}
+				else
+				{
+				}
+			}
+		</script>
+				<form>
+					<div class="form-group">
+						<label for="name"><strong> Name </strong></label>
+						<input type="text" id="uname" placeholder="Name">
+					</div>
+					<div class="form-group">
+						<label for="email"><strong> Email </strong></label>
+						<input type="text"  id="mail" name="email" placeholder="Email">
+					</div>
+					<div class="form-type">
+						<label for="message"><strong> Message </strong></label>
+						<textarea name="message" id="imessage" placeholder="Message"> </textarea>
+					</div>
+					<button onsubmit="validate1()" type="submit" class="btn"> Submit </button>
+				</form>
+			</div>
+		</section>
+		<footer id="main-footer">
+		<p><strong><em> Hotel DEB-BHOOMI &copy; 2019, All Rights Reserved </em></strong></p>
+	</footer>
+</body>
+</html>

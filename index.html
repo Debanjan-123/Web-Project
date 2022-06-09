@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>
+	<title> HOTEL BT|WELCOME </title>
+</head>
+<body>
+	<header>
+	
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				box-sizing:border-box;
+			}
+			body{
+				font-family: sans-serif;
+				line-height:1.7em;
+			}
+			a{
+				color:#333;
+				text-decoration:none;
+			}
+			h1,h2,h3{
+				padding-bottom:20px;
+			}
+			p{
+				margin:10px 0;
+			}
+			.container{
+				margin: auto;
+				max-width: 1100px;
+				overflow: auto;
+				padding:0 20px;
+			}
+				.container h1{
+				text-shadow: 1px 1px;
+			}
+				.container h2{
+					text-shadow: 1px 1px 2px;
+				}
+			.container a{
+				text-shadow: 1px 1px ;
+			}
+			#navbar{
+				background-color: #333;
+				overflow: auto;
+				color:#fff;
+			}
+			#navbar a{
+				color:#fff;
+			}
+			#navbar h1{
+				float:left;
+				padding-top:20px;
+			}
+			#navbar ul{
+				list-style: none;
+				float:right;
+			}
+			#navbar ul li{
+				float:left;
+			}
+			#navbar ul li a{
+				display:block;
+				padding:20px;
+				text-align:center;
+			}
+			#navbar ul li a:hover, #navbar ul li a.bar{
+				background-color: #444;
+				color:#f7c08a;
+			}
+			.text-primary{
+				color:red;
+			}
+			#showcase{
+				background:url("2.jpg") no-repeat center center/cover;
+				height: 600px;
+				animation-name:animate1;
+				animation-duration: 6s;
+				animation-iteration-count: infinite;
+			}		
+			@keyframes animate1{
+				to{
+					background:url("5.jpg");
+					background-size: 100%;
+				}
+			}
+			#showcase ,.showcase-content{
+				color:blue;
+				text-align:center;
+				padding-top:100px;
+			}
+			 .showcase-content h1{
+				font-size:60px;
+				line-height:1.2em;
+			}
+			.showcase-content p{
+				font-size: 18px;
+			}
+			.btn{
+				display:inline-block;
+				font-size:18px;
+				color:blue;
+				background:black;
+				padding:13px 20px;
+				cursor:pointer;
+				border:none;
+			}
+			.btn:hover{
+				background:#f7c08a;
+				color:#333;
+			}
+			#home-info{
+				height:500px;
+			}
+			 .info-image{
+				float:left;
+				width:50%;
+				background:url("6.jpg") no-repeat;
+				max-height: 100%;
+				height:500px;
+				animation-name:animate2;
+				animation-duration: 6s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes animate2{
+				to{
+					background:url("2.jpg");
+					background-size: 100%;
+				}
+			}
+			#home-info .info-content{
+				float:right;
+				width:50%;
+				max-height:100%;
+				text-align:center;
+				padding:5px 5px;
+				overflow:hidden;
+				height:500px;
+			}
+			#about-info .info-right{
+				float:right;
+				width:50%;
+				min-height:100%;
+			}
+			#about-info .info-right img{
+				background:url("5.jpg");
+				display:block;
+				width:100%;
+				margin:auto;
+				border:4px solid black;
+				border-radius:55%;
+			}
+			#about-info .info-left{
+				float:left;
+				width:50%;
+				min-height:100%;
+			}
+			#about-info a{
+				color:red;
+				font-size: 25px;
+			}
+			.info-left h1{
+				text-shadow: 1px 1px 2px;
+			}
+			.l-heading{
+				font-size: 40px;
+			}
+			#about-info{
+				padding:20px 20px;
+			}
+			#testimonials{
+				height:600px;
+				background:url("3.jpg")no-repeat center center/cover;
+				bottom-padding:20px;
+				border:4px solid blue;
+				animation-name:animate5;
+				animation-duration: 6s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes animate5{
+				to{
+					background:url("12.jpg");
+					background-size: 100%;
+				}
+			}
+			#testimonials h2{
+				color:blue;
+				text-align:center;
+				padding-top:20px;
+			}
+			#testimonials .testimonial img{
+				width:100px;
+				display:inline-block;
+				background:black;
+				border:5px solid red;
+			}
+			#testimonials .testimonial p{
+				color:red;
+				font-size:25px;
+				top-padding:20px;
+				display:inline-block;
+				background:white;
+			}
+				#main-footer{
+				text-align:center;
+				background-color:pink;
+				padding: 10px 10px; 
+				border:4px solid black;
+			}
+		</style>
+		<nav id="navbar">
+		<div class="container">
+			<h1 class="logo"><a href="index.html"> HOTEL DEB-BHOOMI </a></h1> 
+			<ul>
+			<li> <a class="bar" href="index.html"> HOME </a></li>
+			<li> <a href="about.html"> ABOUT </a></li>
+			<li> <a href="contact.html"> CONTACT </a></li>
+			</ul>
+		</div> 
+		</nav>
+		<div id="showcase">
+			<div class="container">
+				<div class="showcase-content">
+					<h1><span class="text-primary"> Enjoy </span>  your stay </h1>
+					<p class="lead"><strong>Book rooms with the best offer, get 25% + RS 300 off on your first booking</strong></p>
+					<a class="btn" href="about.html"> About our Hotel </a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="home-info">
+		<div class="info-image"> Image </div>
+		<div class="info-content">
+			<h2> <span class="text-primary"> The History </span> Of Our Hotel </h2>
+			<p><strong> The hotel was launched by request of hospitality group in 1st April 1950 and continuing it with a good service and hostality 
+			for visitors</strong> </p>
+		    <a href="about.html" class="btn btn-light"> Read More </a>
+		</div>
+	</section>
+	<footer id="main-footer">
+		<p><strong><em> Hotel DEB-BHOOMI &copy; 2019, All Rights Reserved </em></strong></p>
+	</footer>
+</body>
+</html>
